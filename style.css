@@ -141,7 +141,10 @@ section[role=hero_image] {
 section[role=hero_image] ul {
   margin: 0px;
   padding: 0px;
-  display: none;
+}
+section[role=hero_image] ul li {
+  float: left;
+  display: block;
 }
 
 footer {
@@ -186,6 +189,51 @@ section[role=content] a.cta {
   text-align: center;
   cursor: pointer;
 }
+section[role=content] #lightbox {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+section[role=content] #lightbox p {
+  color: white;
+}
+section[role=content] #lightbox p.title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #e99a00;
+  margin: 0px;
+}
+section[role=content] #lightbox img {
+  max-width: 90%;
+}
+section[role=content] #lightbox .arrow-left, section[role=content] #lightbox .arrow-right, section[role=content] #lightbox .close {
+  position: fixed;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+section[role=content] #lightbox .arrow-left {
+  top: 230px;
+  left: 5%;
+  display: none;
+}
+section[role=content] #lightbox .arrow-right {
+  top: 230px;
+  right: 5%;
+  display: none;
+}
+section[role=content] #lightbox .close {
+  top: 20px;
+  right: 5%;
+  font-size: 24px;
+}
 
 @media all and (min-width: 721px) {
   nav[role=mobile] {
@@ -204,10 +252,10 @@ section[role=content] a.cta {
 
   section[role=hero_image] ul {
     display: block;
-    padding-right: 4.2%;
+    padding-left: 4.2%;
   }
   section[role=hero_image] ul li {
-    float: right;
+    float: left;
     display: block;
   }
 
@@ -231,6 +279,9 @@ section[role=content] a.cta {
   }
   section[role=content] a.cta {
     width: 75%;
+  }
+  section[role=content] #lightbox .arrow-left, section[role=content] #lightbox .arrow-right {
+    display: block;
   }
 }
 @media all and (min-width: 1025px) {

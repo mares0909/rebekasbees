@@ -1,0 +1,24 @@
+{
+    "images": [
+        {
+            "title": "My setting_1",
+            "description": "This is no.1 picture of my setting",
+            "url": "setting_1.jpg"
+        },
+        {
+            "title": "My setting_2",
+            "description": "This is no.2 picture of my setting",
+            "url": "setting_2.jpg"
+        },
+        {
+            "title": "My setting_3",
+            "description": "This is no.3 picture of my setting",
+            "url": "setting_3.jpg"
+        },
+        {
+            "title": "My setting_4",
+            "description": "This is no.4 picture of my setting",
+            "url": "setting_4.jpg"
+        }
+    ]
+}
