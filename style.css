@@ -201,6 +201,7 @@ section[role=content] #lightbox {
 }
 section[role=content] #lightbox p {
   color: white;
+  margin: 0px;
 }
 section[role=content] #lightbox p.title {
   font-size: 1.5em;
