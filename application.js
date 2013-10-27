@@ -20,6 +20,7 @@ $(document).ready(function(){
 			$("[data-menu=" + selected + "]").addClass("selected");
 			$("[role=content]>div").slideUp(650);
 			$("#" + selected).slideDown(650);
+			$("html, body").animate({ scrollTop: "295px" });
 			$("[role=hero_image]").animate({
 				height: "150",
 				backgroundPositionY: "-120"
@@ -32,6 +33,7 @@ $(document).ready(function(){
 			if($("nav[role=mobile]").is(":visible")) {
 				$("[role=mobile] #menu").slideToggle();
 			}
+			$("html, body").animate({ scrollTop: "295px" });
 		}
 	}
 
@@ -54,8 +56,13 @@ $(document).ready(function(){
 				loop:true,
 				grabCursor: true
 			})
+			var myTicker = setTimeout(function(){
+				window.mySwiper.resizeFix();
+				window.mySwiper.reInit();
+				console.log("REINITED");
+			}, 2000);
+			updateLbx();
 		});
-		updateLbx();
 	});
 
 	$(".close").on('click', function(e){
@@ -75,8 +82,9 @@ $(document).ready(function(){
 
 	function updateLbx(e){
 		if(window.galery == true){
-			$("#lightbox img").css("maxHeight", e.target.innerHeight*0.75);
-			$(".arrow-left, .arrow-right").css("top", (e.target.innerHeight > 590 ? (590/2-30) : (e.target.innerHeight/2-30)));
+			height = $(window).height();
+			$("#lightbox img").css("maxHeight", height*0.75);
+			$(".arrow-left, .arrow-right").css("top", (height > 590 ? (590/2-30) : (height/2-30)));
 		}
 	}
 
