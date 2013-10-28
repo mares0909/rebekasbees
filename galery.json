@@ -1,24 +1,34 @@
 {
-    "images": [
+	"images": [
         {
-            "title": "My setting_1",
-            "description": "This is no.1 picture of my setting",
+            "title": "Living room",
+            "description": "",
+            "url": "setting_0.jpg"
+        },
+        {
+            "title": "Children's Bedroom",
+            "description": "",
             "url": "setting_1.jpg"
         },
         {
-            "title": "My setting_2",
-            "description": "This is no.2 picture of my setting",
+            "title": "Baby crib",
+            "description": "The baby crib is available for babies under 6 months",
             "url": "setting_2.jpg"
         },
         {
-            "title": "My setting_3",
-            "description": "This is no.3 picture of my setting",
+            "title": "Toys",
+            "description": "Toys suitable for under 3-year-olds",
             "url": "setting_3.jpg"
         },
         {
-            "title": "My setting_4",
-            "description": "This is no.4 picture of my setting",
+            "title": "Book shelf",
+            "description": "Wide range of books for all age groups and toys for older kids",
             "url": "setting_4.jpg"
+        },
+        {
+            "title": "Bathroom",
+            "description": "Children's own, separate bathroom",
+            "url": "setting_5.jpg"
         }
     ]
 }

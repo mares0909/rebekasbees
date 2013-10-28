@@ -33,7 +33,7 @@ $(document).ready(function(){
 			if($("nav[role=mobile]").is(":visible")) {
 				$("[role=mobile] #menu").slideToggle();
 			}
-			$("html, body").animate({ scrollTop: "295px" });
+			$("html, body").animate({ scrollTop: "295px" }); 
 		}
 	}
 
@@ -56,11 +56,6 @@ $(document).ready(function(){
 				loop:true,
 				grabCursor: true
 			})
-			var myTicker = setTimeout(function(){
-				window.mySwiper.resizeFix();
-				window.mySwiper.reInit();
-				console.log("REINITED");
-			}, 2000);
 			updateLbx();
 		});
 	});
@@ -83,7 +78,7 @@ $(document).ready(function(){
 	function updateLbx(e){
 		if(window.galery == true){
 			height = $(window).height();
-			$("#lightbox img").css("maxHeight", height*0.75);
+			$("#lightbox img").css("maxHeight", height*0.75 > 500 ? 500 : height*0.75);
 			$(".arrow-left, .arrow-right").css("top", (height > 590 ? (590/2-30) : (height/2-30)));
 		}
 	}
@@ -101,4 +96,22 @@ $(document).ready(function(){
 		e.preventDefault()
 		window.mySwiper.swipeNext()
 	})
+
+	$('#recalculate').on('click', function(e){
+		var reb_lat =51.638082;
+	    var reb_lon =-0.178483;
+	    var address = $("#address").val();
+	    var message = "";
+	    var request = "http://maps.googleapis.com/maps/api/distancematrix/json?origins=" + reb_lat + "," + reb_lon + "&destinations=" + address + "&mode=driving&sensor=false";
+	    
+	    $.getJSON( request, function( data ) {
+	    	console.log(data.rows[0].elements[0].status);
+	    	if(data.rows[0].elements[0].status == "OK"){
+		    	message = "<strong>" + address + "</strong> is <strong>" + data.rows[0].elements[0].distance.text + "</strong> away from Rebeka's setting.<br/>It would take you <strong>" + data.rows[0].elements[0].duration.text + "</strong> to drive there.";
+		    } else {
+		    	message = "You must have entered a wrong address! Try again please!";
+		    }
+		    $("#result").html(message);
+	    });
+	});
 });

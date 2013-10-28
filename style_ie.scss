@@ -45,46 +45,10 @@ header {
 }
 
 nav[role=mobile] {
-	width: 100%;
-	height: 100%;
-
-	#menu_cta {
-		width: 100%;
-		@include menu_style();
-		@include gradient($bee_yellow, lighten($bee_yellow, 20%));
-		border-bottom: 1px solid lighten($bee_yellow, 30%);
-		cursor: pointer;
-	}
-
-	#menu {
-		background-color: $bee_yellow;
-		display: none;
-	}
-
-	ul {
-		@include centred();
-		padding: 0px;
-		margin-top: 0px;
-		margin-bottom: 0px;
-
-		li {
-			width: 100%;
-			height: 50px;
-			display: block;
-			@include menu_style();	
-			@include centred();
-			cursor: pointer;
-		}
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
-	}
+	display: none;
 }
 
 nav[role=desktop] {
-	display: none;
 	width: 100%;
 	height: 50px;
 	@include gradient($bee_yellow, lighten($bee_yellow, 20%));
@@ -97,7 +61,7 @@ nav[role=desktop] {
 
 		li.menu {
 			@include menu_style();
-			width: percentage(1.7/12);
+			width: 14%;
 			display: block;
 			float: left;
 			border-right: 1px solid lighten($bee_yellow, 30%);
@@ -114,6 +78,10 @@ nav[role=desktop] {
 			height: 50px;
 			display: block;
 			float: right;
+
+			img {
+				border: none;
+			}
 		}
 
 		li:first-child {
@@ -134,16 +102,11 @@ section[role=hero_image] {
 	margin-right: auto;
 	background-image: url("images/hero_4.jpg");
 	background-size: 1920px;
-	box-shadow: inset 5px 5px 20px rgba(0,0,0,0.5);
+	box-shadow: inset 5px 5px 20px black;
 	border-bottom: 10px solid $bee_yellow;
 
 	ul {
-		margin: 0px;
-		padding: 0px;
-		li {
-			float: left;
-			display: block;
-		}
+		display: none;
 	}
 }
 
@@ -158,21 +121,25 @@ footer {
 
 section[role=content] {
 	@include centred();
+	overflow: auto;
 
-	.left_coloumn, .right_coloumn {		
+	.left_coloumn, .right_coloumn {	
+		float: left;	
 		img, .half_width {max-width: 100%}
-		width: 100%;
+	}
+	.left_coloumn { width: 50% }
+	.right_coloumn {
+		width: 45%;
+		padding-left: 5%;
+		padding-top: 75px;
+		.half_width { max-width: 60%; float: right; }
 	}
 
-	#map {
-		width: 100%;
-		height: 400px;
-	}
 
 	a.cta {
 		display: block;
 		@include gradient($bee_yellow, lighten($bee_yellow, 20%));
-		width: 96%;
+		width: 75%;
 		padding: 2%;
 		margin-top: 10px;
 		margin-bottom: 20px;
@@ -191,7 +158,7 @@ section[role=content] {
 		left: 0px;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0,0,0,0.9);
+		background-color: black;
 
 		p {
 			color: white;
@@ -217,71 +184,15 @@ section[role=content] {
 		.arrow-left {
 			top: 230px;
 			left: 5%;
-			display: none;
 		}
 		.arrow-right {
 			top: 230px;
 			right: 5%;
-			display: none;
 		}
 		.close {
 			top: 20px;
 			right: 5%;
 			font-size: 24px;
 		}
-	}
-}
-
-@media all and (min-width: 721px) {
-	nav[role=mobile] { display: none }
-	nav[role=desktop] {
-		display: block;
-		ul {
-			li.social { display: none }
-			li.menu { width: 19.8% }
-		}
-	}
-
-	section[role=hero_image] {
-		ul {
-			display: block;
-			padding-left: 4.2%;
-			li {
-				float: left;
-				display: block;
-			}
-		}
-	}
-
-	section[role=content] {
-		overflow: auto;
-
-		.left_coloumn, .right_coloumn { float: left }
-		.left_coloumn { width: 50% }	
-		.right_coloumn {
-			width: 45%;
-			padding-left: 5%;
-			padding-top: 75px;
-			.half_width { max-width: 60%; float: right; }
-		}
-		a.cta { width: 75% }
-		#lightbox {
-			.arrow-left, .arrow-right {
-				display: block;
-			}
-		}
-	}
-}
-
-@media all and (min-width: 1025px) {
-	nav[role=desktop] {
-		ul {
-			li.social { display: block }
-			li.menu { width: 14% }
-		}
-	}
-
-	section[role=hero_image] {
-		ul { display: none }
 	}
 }
