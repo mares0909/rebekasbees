@@ -36,13 +36,17 @@ body {
 	height: 100%;
 	margin: 0px;
 	font-family: arial;
-	min-width: 340px;
+	min-width: 320px;
 }
 
 header {
 	@include centred();
 	height: 125px;
-	img {cursor: pointer}
+	img {
+		cursor: pointer;
+		width: 288px;
+		height: 115px;
+	}
 }
 
 a:link {color: $bee_yellow; font-weight: bold;}
@@ -243,6 +247,12 @@ section[role=content] {
 }
 
 @media all and (min-width: 721px) {
+	header {
+	img {
+			width: 312px;
+			height: 125px;
+		}
+	}
 	nav[role=mobile] { display: none }
 	nav[role=desktop] {
 		display: block;
