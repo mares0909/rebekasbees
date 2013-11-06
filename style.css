@@ -185,6 +185,9 @@ section[role=content] .left_coloumn, section[role=content] .right_coloumn {
 section[role=content] .left_coloumn img, section[role=content] .left_coloumn .half_width, section[role=content] .right_coloumn img, section[role=content] .right_coloumn .half_width {
   max-width: 100%;
 }
+section[role=content] li {
+  margin-bottom: 5px;
+}
 section[role=content] input#address {
   width: 235px;
 }
