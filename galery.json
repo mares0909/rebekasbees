@@ -1,34 +1,129 @@
 {
 	"images": [
         {
-            "title": "Living room",
+            "title": "",
             "description": "",
-            "url": "setting_0.jpg"
+            "url": "setting_01.jpg"
         },
         {
-            "title": "Children's Bedroom",
+            "title": "",
             "description": "",
-            "url": "setting_1.jpg"
+            "url": "setting_02.jpg"
         },
         {
-            "title": "Baby crib",
-            "description": "The baby crib is available for babies under 6 months",
-            "url": "setting_2.jpg"
+            "title": "",
+            "description": "",
+            "url": "setting_03.jpg"
         },
         {
-            "title": "Toys",
-            "description": "Toys suitable for under 3-year-olds",
-            "url": "setting_3.jpg"
+            "title": "",
+            "description": "",
+            "url": "setting_04.jpg"
         },
         {
-            "title": "Book shelf",
-            "description": "Wide range of books for all age groups and toys for older kids",
-            "url": "setting_4.jpg"
+            "title": "",
+            "description": "",
+            "url": "setting_05.jpg"
         },
         {
-            "title": "Bathroom",
-            "description": "Children's own, separate bathroom",
-            "url": "setting_5.jpg"
+            "title": "",
+            "description": "",
+            "url": "setting_06.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_07.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_08.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_09.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_10.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_11.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_12.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_13.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_14.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_15.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_16.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_17.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_18.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_19.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_20.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_21.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_22.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_23.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_24.jpg"
+        },
+        {
+            "title": "",
+            "description": "",
+            "url": "setting_25.jpg"
         }
     ]
 }
