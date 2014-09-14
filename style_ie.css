@@ -8,11 +8,7 @@ body {
   height: 100%;
   margin: 0px;
   font-family: arial;
-<<<<<<< HEAD
   min-width: 340px;
-=======
-  min-width: 320px;
->>>>>>> gh-pages
 }
 
 header {
@@ -22,81 +18,12 @@ header {
   margin-right: auto;
   height: 125px;
 }
-<<<<<<< HEAD
-=======
-header img {
-  cursor: pointer;
-  width: 288px;
-  height: 115px;
-}
-
-a:link {
-  color: #e99a00;
-  font-weight: bold;
-}
-
-a:visited {
-  color: #b67800;
-}
->>>>>>> gh-pages
 
 nav[role=mobile] {
-  width: 100%;
-  height: 100%;
-}
-nav[role=mobile] #menu_cta {
-  width: 100%;
-  height: 37px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  padding-top: 13px;
-  background-color: #e99a00;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffc450), to(#e99a00));
-  background-image: -webkit-linear-gradient(top, #ffc450, #e99a00);
-  background-image: -moz-linear-gradient(top, #ffc450, #e99a00);
-  background-image: -ms-linear-gradient(top, #ffc450, #e99a00);
-  background-image: -o-linear-gradient(top, #ffc450, #e99a00);
-  border-bottom: 1px solid #ffd583;
-  cursor: pointer;
-}
-nav[role=mobile] #menu {
-  background-color: #e99a00;
   display: none;
-}
-nav[role=mobile] ul {
-  max-width: 1140px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-nav[role=mobile] ul li {
-  width: 100%;
-  height: 50px;
-  display: block;
-  height: 37px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  padding-top: 13px;
-  max-width: 1140px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  cursor: pointer;
-}
-nav[role=mobile] ul a {
-  color: white;
-  text-decoration: none;
 }
 
 nav[role=desktop] {
-  display: none;
   width: 100%;
   height: 50px;
   background-color: #e99a00;
@@ -123,7 +50,7 @@ nav[role=desktop] ul li.menu {
   font-weight: bold;
   font-size: 20px;
   padding-top: 13px;
-  width: 14.16667%;
+  width: 14%;
   display: block;
   float: left;
   border-right: 1px solid #ffd583;
@@ -141,6 +68,9 @@ nav[role=desktop] ul li.social {
   display: block;
   float: right;
 }
+nav[role=desktop] ul li.social img {
+  border: none;
+}
 nav[role=desktop] ul li:first-child {
   border-left: 1px solid #ffd583;
 }
@@ -154,26 +84,13 @@ section[role=hero_image] {
   height: 360px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
   background-image: url("images/hero_4.jpg");
-=======
-  background-image: url("images/hero_final_2.jpg");
->>>>>>> gh-pages
   background-size: 1920px;
-  box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 5px 5px 20px black;
   border-bottom: 10px solid #e99a00;
 }
 section[role=hero_image] ul {
-  margin: 0px;
-  padding: 0px;
-<<<<<<< HEAD
   display: none;
-=======
-}
-section[role=hero_image] ul li {
-  float: left;
-  display: block;
->>>>>>> gh-pages
 }
 
 footer {
@@ -193,22 +110,26 @@ section[role=content] {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
 }
 section[role=content] .left_coloumn, section[role=content] .right_coloumn {
-  width: 100%;
+  float: left;
 }
 section[role=content] .left_coloumn img, section[role=content] .left_coloumn .half_width, section[role=content] .right_coloumn img, section[role=content] .right_coloumn .half_width {
   max-width: 100%;
 }
-<<<<<<< HEAD
-=======
-section[role=content] li {
-  margin-bottom: 5px;
+section[role=content] .left_coloumn {
+  width: 50%;
 }
-section[role=content] input#address {
-  width: 235px;
+section[role=content] .right_coloumn {
+  width: 45%;
+  padding-left: 5%;
+  padding-top: 75px;
 }
->>>>>>> gh-pages
+section[role=content] .right_coloumn .half_width {
+  max-width: 60%;
+  float: right;
+}
 section[role=content] a.cta {
   display: block;
   background-color: #e99a00;
@@ -217,7 +138,7 @@ section[role=content] a.cta {
   background-image: -moz-linear-gradient(top, #ffc450, #e99a00);
   background-image: -ms-linear-gradient(top, #ffc450, #e99a00);
   background-image: -o-linear-gradient(top, #ffc450, #e99a00);
-  width: 96%;
+  width: 75%;
   padding: 2%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -227,10 +148,6 @@ section[role=content] a.cta {
   text-align: center;
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-@media all and (min-width: 721px) {
-=======
 section[role=content] #lightbox {
   display: none;
   opacity: 0;
@@ -239,7 +156,7 @@ section[role=content] #lightbox {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
 }
 section[role=content] #lightbox p {
   color: white;
@@ -254,110 +171,23 @@ section[role=content] #lightbox p.title {
 section[role=content] #lightbox img {
   max-width: 90%;
 }
-section[role=content] #lightbox img.icon {
-  width: 50%;
-  height: 50%;
-}
 section[role=content] #lightbox .arrow-left, section[role=content] #lightbox .arrow-right, section[role=content] #lightbox .close {
   position: fixed;
   font-size: 48px;
   color: white;
   z-index: 2;
   cursor: pointer;
-  opacity: 0.5;
 }
 section[role=content] #lightbox .arrow-left {
   top: 230px;
   left: 5%;
-  display: none;
 }
 section[role=content] #lightbox .arrow-right {
   top: 230px;
   right: 5%;
-  display: none;
-  text-align: right;
 }
 section[role=content] #lightbox .close {
   top: 20px;
   right: 5%;
   font-size: 24px;
-  font-weight: bold;
-}
-
-@media all and (min-width: 721px) {
-  header img {
-    width: 312px;
-    height: 125px;
-  }
-
->>>>>>> gh-pages
-  nav[role=mobile] {
-    display: none;
-  }
-
-  nav[role=desktop] {
-    display: block;
-  }
-  nav[role=desktop] ul li.social {
-    display: none;
-  }
-  nav[role=desktop] ul li.menu {
-    width: 19.8%;
-  }
-
-  section[role=hero_image] ul {
-    display: block;
-<<<<<<< HEAD
-    padding-right: 4.2%;
-  }
-  section[role=hero_image] ul li {
-    float: right;
-=======
-    padding-left: 4.2%;
-  }
-  section[role=hero_image] ul li {
-    float: left;
->>>>>>> gh-pages
-    display: block;
-  }
-
-  section[role=content] {
-    overflow: auto;
-  }
-  section[role=content] .left_coloumn, section[role=content] .right_coloumn {
-    float: left;
-  }
-  section[role=content] .left_coloumn {
-    width: 50%;
-  }
-  section[role=content] .right_coloumn {
-    width: 45%;
-    padding-left: 5%;
-    padding-top: 75px;
-  }
-  section[role=content] .right_coloumn .half_width {
-    max-width: 60%;
-    float: right;
-  }
-  section[role=content] a.cta {
-    width: 75%;
-  }
-<<<<<<< HEAD
-=======
-  section[role=content] #lightbox .arrow-left, section[role=content] #lightbox .arrow-right {
-    display: block;
-  }
->>>>>>> gh-pages
-}
-@media all and (min-width: 1025px) {
-  nav[role=desktop] ul li.social {
-    display: block;
-  }
-  nav[role=desktop] ul li.menu {
-    width: 14%;
-  }
-
-  section[role=hero_image] ul {
-    display: none;
-  }
 }
