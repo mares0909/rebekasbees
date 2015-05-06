@@ -1,14 +1,7 @@
 $(document).ready(function(){
-<<<<<<< HEAD
-	$("[role=content]").hide();
-	updateBgr();
-
-	var initial = true;
-=======
 	$("[role=content]>div").hide();
 	updateBgr();
 
->>>>>>> gh-pages
 	window.currentPage = "";
 
 	$(window).resize(function(){
@@ -19,34 +12,11 @@ $(document).ready(function(){
 
 	function switchpage(e){
 		var selected = $(this).data("menu");
-<<<<<<< HEAD
-		console.log(window.currentPage + "=?" + selected);
-=======
 		var cta = $(this).attr("class") == "cta menu" ? true : false ;
->>>>>>> gh-pages
 		if(window.currentPage != selected) {
 			window.currentPage = selected;
 			$(".menu").removeClass("selected");
 			$("[data-menu=" + selected + "]").addClass("selected");
-<<<<<<< HEAD
-			$("[role=content]").slideUp(650, function(){
-				$("[role=content]").load("pages/"+selected+".html", function(){
-					$(".cta").on('click', switchpage);
-				});
-			});
-			$("[role=hero_image]").animate({
-				height: "150",
-				backgroundPositionY: "-120"
-			}, 650, function(){
-				$("[role=content]").slideDown(650);
-			});
-			if($("nav[role=mobile]").is(":visible")) {
-				$("[role=mobile] #menu").slideToggle();
-			}
-		}
-	}
-
-=======
 			$("[role=content]>div").slideUp(650);
 			$("#" + selected).slideDown(650);
 			$("html, body").animate({ scrollTop: "295px" });
@@ -98,13 +68,10 @@ $(document).ready(function(){
 		});
 	});
 
->>>>>>> gh-pages
 	$("#menu_cta").on('click', function(e){
 		$("[role=mobile] #menu").slideToggle();
 	});
 
-<<<<<<< HEAD
-=======
 	$(window).on('resize', updateLbx);
 
 	function updateLbx(e){
@@ -115,13 +82,10 @@ $(document).ready(function(){
 		}
 	}
 
->>>>>>> gh-pages
 	function updateBgr(){
 		var width = $(window).width();
 		$("[role=hero_image]").css("background-position-x", -((1920-width)/2) );
 	}
-<<<<<<< HEAD
-=======
 
 	$('.arrow-left').on('click', function(e){
 		e.preventDefault()
@@ -160,5 +124,4 @@ $(document).ready(function(){
 		}, 650);
 		window.currentPage = "";
 	});
->>>>>>> gh-pages
 });
