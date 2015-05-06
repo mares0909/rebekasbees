@@ -8,11 +8,7 @@ body {
   height: 100%;
   margin: 0px;
   font-family: arial;
-<<<<<<< HEAD
-  min-width: 340px;
-=======
   min-width: 320px;
->>>>>>> gh-pages
 }
 
 header {
@@ -22,8 +18,6 @@ header {
   margin-right: auto;
   height: 125px;
 }
-<<<<<<< HEAD
-=======
 header img {
   cursor: pointer;
   width: 288px;
@@ -38,7 +32,6 @@ a:link {
 a:visited {
   color: #b67800;
 }
->>>>>>> gh-pages
 
 nav[role=mobile] {
   width: 100%;
@@ -154,11 +147,7 @@ section[role=hero_image] {
   height: 360px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
-  background-image: url("images/hero_4.jpg");
-=======
   background-image: url("images/hero_final_2.jpg");
->>>>>>> gh-pages
   background-size: 1920px;
   box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.5);
   border-bottom: 10px solid #e99a00;
@@ -166,14 +155,10 @@ section[role=hero_image] {
 section[role=hero_image] ul {
   margin: 0px;
   padding: 0px;
-<<<<<<< HEAD
-  display: none;
-=======
 }
 section[role=hero_image] ul li {
   float: left;
   display: block;
->>>>>>> gh-pages
 }
 
 footer {
@@ -200,15 +185,12 @@ section[role=content] .left_coloumn, section[role=content] .right_coloumn {
 section[role=content] .left_coloumn img, section[role=content] .left_coloumn .half_width, section[role=content] .right_coloumn img, section[role=content] .right_coloumn .half_width {
   max-width: 100%;
 }
-<<<<<<< HEAD
-=======
 section[role=content] li {
   margin-bottom: 5px;
 }
 section[role=content] input#address {
   width: 235px;
 }
->>>>>>> gh-pages
 section[role=content] a.cta {
   display: block;
   background-color: #e99a00;
@@ -227,10 +209,6 @@ section[role=content] a.cta {
   text-align: center;
   cursor: pointer;
 }
-<<<<<<< HEAD
-
-@media all and (min-width: 721px) {
-=======
 section[role=content] #lightbox {
   display: none;
   opacity: 0;
@@ -290,7 +268,6 @@ section[role=content] #lightbox .close {
     height: 125px;
   }
 
->>>>>>> gh-pages
   nav[role=mobile] {
     display: none;
   }
@@ -307,17 +284,10 @@ section[role=content] #lightbox .close {
 
   section[role=hero_image] ul {
     display: block;
-<<<<<<< HEAD
-    padding-right: 4.2%;
-  }
-  section[role=hero_image] ul li {
-    float: right;
-=======
     padding-left: 4.2%;
   }
   section[role=hero_image] ul li {
     float: left;
->>>>>>> gh-pages
     display: block;
   }
 
@@ -342,12 +312,9 @@ section[role=content] #lightbox .close {
   section[role=content] a.cta {
     width: 75%;
   }
-<<<<<<< HEAD
-=======
   section[role=content] #lightbox .arrow-left, section[role=content] #lightbox .arrow-right {
     display: block;
   }
->>>>>>> gh-pages
 }
 @media all and (min-width: 1025px) {
   nav[role=desktop] ul li.social {
